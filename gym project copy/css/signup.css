@@ -1,0 +1,489 @@
+body{
+    position: relative;
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+ #signupmessage{
+     position: absolute;
+     top: 5%;
+     left: 50%;
+   transform: translate(-50%, 5%);
+     width: 400px;
+     height: 55px;
+     font-family: var(--mainfont);
+     font-size: 1.2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     transition: all .2s;
+     
+ }
+
+
+ #show.active, #show-two.active{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 30px;
+     width: 100%;
+     border-radius: 10px;
+     
+ }
+:root{
+    --maincolor: #006888;
+    --maintitlefont: 'lato', sans-serif;    
+    --mainfont:'Roboto', sans-serif;
+    --mainbuttoncolor:#022833;
+    }
+    
+
+    
+.aside{
+    display: none;
+}
+.signup-body{
+   display: grid;
+   place-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:  #006888;
+}
+
+h3{
+    font-family: var(--mainfont);
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+#signup-form{
+   
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup{
+height: 690px;
+width: 470px;
+border: 1px solid var(--mainbuttoncolor) ;
+border-radius: 10px;
+margin: auto;
+align-items: center;
+background-color: white;
+}
+
+.s-logdetails{
+   
+    display: flex;
+    height: 100%;
+  
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.s-logdetails h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+
+  font-family: var(--maintitlefont);
+
+}
+
+.s-logdetails input[type="text"]:focus,
+.s-logdetails input[type="password"]:focus{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+
+
+.s-logdetails input[type="text"],
+.s-logdetails input[type="password"]
+{
+    height: 34px;
+    border-radius: 10px;
+    font-size: 1rem;
+  padding-left: 10px;
+  font-family: var(--mainfont);
+    color: black;
+    margin-bottom: 15px;
+    border: 1px solid  #022833;
+    width: 360px;
+    background-color: white;   
+    transition: all .2s;
+}
+
+
+
+.s-logdetails input::placeholder{
+    color: rgba(0, 0, 0, 0.733);
+    font-family: var(--mainfont);
+    font-size: .7rem;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.829);
+    font-weight: 700;
+
+}
+
+ .remember{
+    color: black;
+font-family: var(--mainfont);
+font-size: 1rem;
+margin-top: 15px;
+
+    
+}
+
+.s-logdetails input[type="checkbox"]{
+color: white;
+ height: 15px;
+ width: 15px;
+font-size: 1rem;
+font-family: var(--mainfont);
+}
+
+
+.s-logdetails .remember span{
+    cursor: pointer;
+margin-left: 100px;
+    color: rgba(255, 0, 0, 0.719)
+   
+   }
+
+   .s-logdetails button{
+       width: 360px;
+       height: 40px;
+       margin-top: 25px;
+       border: none;
+       color: var(--mainbuttoncolor);
+       font-family: var(--mainfont);
+       font-size: 1rem;
+       font-weight: 600;
+       border-radius: 25px;
+       background-color:var(--maincolor);
+       transition: all .1s;
+   }
+   .s-logdetails button:hover{
+       
+    background-color: var(--mainbuttoncolor);
+    color: white;
+   
+
+}
+   
+  .det-part2  .social-media > span{
+      display: inline-block;
+       height: 24px;
+       width: 20px;
+       overflow: hidden;
+       margin: 4px 3px 10px 3px;
+   }
+
+
+
+.social-media span > img{
+       width: 100%;
+       height: auto;
+       padding-right: 3px;
+       cursor: pointer;
+}
+
+
+.det-part1{
+    display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.det-part2 {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+  
+}
+
+.det-part2 #first {
+ font-family: var(--mainfont);
+    font-family: var(--mainfont);
+    font-size: 600;
+
+
+}
+
+.det-part2 #second {
+
+    color: black ;
+    font-family: var(--mainfont);
+    font-size: 1rem;
+
+   }
+
+   .det-part2 #second a {
+  text-decoration: none;
+    color: rgba(255, 0, 0, 0.884) ;
+ margin-left: 15px;
+ font-weight: 700;
+    font-family: var(--mainfont);
+      
+   }
+
+
+
+   @media only screen and (min-width: 800px) and (max-width:1000px) {
+
+   
+   #signupmessage.active{
+       left: 50%;
+   }
+   
+    .signup{
+        height: 670px;
+        width: 550px;
+        border: 1px solid var(--mainbuttoncolor) ;
+        border-radius: 10px;
+        margin: auto;
+        background-color: white;
+        }
+
+        input{
+            color: black;
+        }
+   
+
+        .aside span{
+            color: var(--mainbuttoncolor);
+        }
+
+        .s-logdetails button{
+            width: 360px;
+            height: 40px;
+            margin-top: 15px;}
+         
+   .s-logdetails input[type="text"],
+   .s-logdetails input[type="password"]{
+   border: 1px solid var(--maincolor);
+      height: 35px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      width: 420px;
+      background-color: white;
+      color: #000;
+   
+      
+      }
+
+      #signup-form{
+display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  
+ .aside span{
+     color: var(--mainbuttoncolor);
+ }
+  
+
+ #signupmessage.active{
+    left: 60%;
+    top: 60%;
+}
+
+    .signup-body{
+        display: flex;
+        justify-content: center;
+       align-items: center;
+         width: 100vw;
+         height: 100vh;
+         background-color: #0068882d;
+     }
+     
+     .signup{
+         height: 90%;
+         border: none;
+         display: flex;
+         flex-direction: row;
+         width: 1050px;
+         margin: auto;
+     background-color: white
+    
+     
+     }
+     
+     .signup .aside{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        border-radius: 20px;
+         width: 30%;
+         height: 100%;
+         background-color: var(--maincolor);
+     }
+     
+   .s-logdetails{
+      
+         width: 70%;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         height: 100%;
+         background-color: white;
+     }
+   
+
+     .s-logdetails h2{
+         color: var(--mainbuttoncolor);
+        font-size: 1.4rem;
+   text-align: center;
+      font-family: var(--maintitlefont);
+    
+    }
+
+  
+   .s-logdetails input[type="text"],
+.s-logdetails input[type="password"]{
+border: 1px solid var(--maincolor);
+   height: 40px;
+   border-radius: 15px;
+   margin-bottom: 10px;
+   width: 500px;
+   background-color: white;
+   color: #000;
+
+   
+   }
+
+   .s-logdetails input::placeholder{
+       color: var(--mainbuttoncolor);
+   }
+    
+    .aside h2{
+        color: rgba(255, 255, 255, 0.664);
+        font-family: var(--mainfont);
+        font-size: 1.4rem;
+        line-height: 30px;
+        letter-spacing: .5px;
+    }
+   
+    .remember{
+       
+     width: 350px;  
+     margin-top: 7px;
+
+    }
+    
+    
+    .s-logdetails input[type="checkbox"]{
+    
+     height: 20px;
+     width: 30px;
+    font-size: 1.3rem;
+    font-family: var(--mainfont);
+    
+    }
+    
+    .s-logdetails .remember span{
+    
+        margin-left: 55px;
+        color: rgba(255, 0, 0, 0.719)
+       
+       }
+    
+      
+       .s-logdetails button{
+           width: 400px;
+           height: 45px;
+           margin: auto;
+           margin-top: 30px;
+           border: none;
+           color: white;
+           font-family: var(--mainfont);
+           font-size: 1rem;
+           font-weight: 600;
+           border-radius: 25px;
+           background-color: var(--mainbuttoncolor);
+           transition: all .2s;
+       }
+    
+       .s-logdetails button:hover{
+           
+           background-color: #006888;
+           color: white;
+          
+    
+       }
+       
+      .det-part2  .social-media > span{
+          display: inline-block;
+           height: 25px;
+           width: 28px;
+           overflow: hidden;
+           margin: 4px 3px 10px 3px;
+       }
+    
+  
+    
+    .social-media span > img{
+           width: 100%;
+           height: auto;
+           padding-right: 3px;
+    }
+    
+    .s-det-part1{
+        width: 100%;
+        height: 75%;
+    }
+    .det-part2 {
+        height: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    .det-part2 #first {
+     font-family: var(--mainfont);
+        margin-bottom: 15px;
+    
+    }
+    
+    .det-part2 #second {
+    
+        color: black ;
+        font-family: var(--mainfont);
+    
+       }
+    
+       .det-part2 #second a {
+      text-decoration: none;
+        color: rgba(255, 0, 0, 0.726) ;
+     margin-left: 15px;
+        font-family: var(--mainfont);
+           padding-bottom: 20px;
+           padding-top: 20px;
+       }
+    
+       #signup-form{
+display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     
+};

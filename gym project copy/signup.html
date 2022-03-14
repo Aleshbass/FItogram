@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="signup-body">
+    
+    <div class="signup">
+
+        <div class="aside"><h2>Your <br>Adventure<br> Starts <br><span>Now.</span></h2> </div>
+       <div class="s-logdetails" id="">
+            <div class="s-det-part1">`
+                  <h2>Welcome to Fitogram</h2>
+
+                  <form id="signup-form" action="" method="post">
+                    
+                        <div class="fitgram-username">
+                          <h3>Username</h3>
+                          <input type="text" name="fitgram-username" id="fitgram-username" placeholder="Your Fitgram username" required>
+                          <i class="icon"></i>
+                  
+                      </div>
+                  
+      
+                        
+                    <div class="password">
+                      <h3>Password</h3>
+                        <input type="password" name="Password" id="Password" placeholder="password" required>
+                        <div  id="show"></div>
+                    
+                    
+                    </div>
+
+                    <div class="confirmpassword">
+                      <h3>Confirm password</h3>
+                      <input type="password"  name="confirmpassword" id="confirmpassword" placeholder="confirm your password" required>
+                      <div id="show-two"></div>
+                    
+                  
+                  </div>
+            
+                    <div class="remember">
+                        <input type="checkbox" name="Remember-me" id="Remember-me" value="Remember me"> Remember me
+                      <span id="reveal-password">Reveal Password?</span>
+                    </div>
+            
+                  <div class="button">
+                      <button id="signup-button" type="submit">Sign up</button>
+                  </div>
+                </form>
+            
+                </div>
+
+       <div class="det-part2">
+            <p id="first"> Or Sign in with</p>
+            <div class="social-media">
+            <span> <img src="/img/icons8-instagram-240.png" alt="" srcset=""></span>
+            <span> <img src="/img/download.png" alt="" srcset=""></span>
+            <span> <img src="/img/facebook-logo-icon-vector-22390238.jpeg" alt="" srcset=""></span>
+            <span> <img src="/img/tiktok-3185105-2661847.png" alt="" srcset=""></span>
+        </div>
+        <p id="second">Already have an account?<span><a href="login.html">Log In</a></span></p>
+       
+       </div>
+
+     </div>
+            
+    
+       </div>
+    </div>
+
+    <div class="error-message" id="signupmessage" style="text-align: center; margin: 15px 0;"></div>
+
+    <script src="/javascript/signup.js"></script>
+    
+</body>
+</html>
