@@ -1,0 +1,31 @@
+
+     .s-logdetails h2{
+        color: var(--mainbuttoncolor);
+       font-size: 1.9rem;
+     margin: 25px 20px 30px 0px;
+     font-family: var(--maintitlefont);
+   }
+
+   .name,
+   .email,
+   .password,
+   .fitgram-username{
+       display: inline;
+     
+   }
+
+  
+
+   .s-logdetails input[type="password"]{
+       display: inline-block;
+   }
+   .s-logdetails input[type="text"],
+.s-logdetails input[type="password"],
+.s-logdetails input[type="email"]{
+
+   height: 20px;
+   border-radius: 20px;
+   padding-left: 10px;
+   width: 200px;
+   margin-bottom: 29px;
+   }
