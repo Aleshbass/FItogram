@@ -757,7 +757,7 @@ main .image-container.menuclicked{
 .post-aside-one{
     display: flex;
     align-items: center;
-    width: 44%;
+    width: 43%;
     max-width: 200px;
     justify-content: space-between;
 }
@@ -791,7 +791,7 @@ img#verify{
 .post-aside-one {
 font-family: var(--mainfont);
 font-weight: 600;
-font-size: .9rem;
+font-size: .8rem;
 
 }
 
