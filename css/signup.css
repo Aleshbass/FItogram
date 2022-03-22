@@ -10,7 +10,7 @@ body{
  }
 
  #signupmessage.active{
-    border: 2px solid red;
+ 
     position: absolute;
     background-color: red;
     color: white;
