@@ -24,7 +24,7 @@ confirm_password.addEventListener('blur', Mypassword);
 // confirm_password.addEventListener('input', Mypassword);
 // confirm_password.addEventListener('focus', Mypassword);
 password.addEventListener('focus', password_check);
-password.addEventListener('input', password_check);
+// password.addEventListener('input', password_check);
 
 
 
@@ -46,10 +46,10 @@ function confirmpass(){
   showerror.classList.add('active')
        showerror.style.color='white'
        showerror.style.margin="5px 0"
+       showerror.style.padding='8px 0';
+       showerror.style.fontSize='.8rem';
         showerror.style.backgroundColor='red'
         showerror.style.fontWeight='700'
-
-   
         confirm_password.style.border='3px solid red';
         password.style.border='3px solid red'
        
@@ -63,6 +63,7 @@ function confirmpass(){
         showerror.classList.add('active')
         showerror.style.color='white'
         showerror.style.margin="5px 0"
+        showerror.style.padding='8px 0';
          showerror.style.backgroundColor='green'
         confirm_password.style.border='3px solid green';
         password.style.border='3px solid green'
@@ -83,8 +84,10 @@ function Mypassword(){
     
      clearInterval(error);
      showerror.classList.remove('active')
+     showerror.style.padding='0';
+   
      showerror.innerHTML=' ';
-     showerror.style.margin="0"
+     showerror.style.margin="0px"
       showerror.style.backgroundColor='none'
      confirm_password.style.border='1px solid #022833';
 password.style.border='1px solid #022833';
@@ -99,10 +102,13 @@ password.style.border='1px solid #022833';
 
     if(passwordReg.test(password.value)==false){    
         showerr.classList.add('active');
-        showerr.innerHTML=`Not strong Enough eg: Eight23&@)`;
+        showerr.innerHTML=`8 characters with atleast one capital letter, one number, and ($#%&)`;
             showerr.style.backgroundColor='red';
             showerr.style.color='white';
-            showerr.style.margin='5px 0';
+            showerr.style.margin='8px 0';
+            showerr.style.padding='8px 0';
+            showerr.style.fontSize='.8rem';
+
         
             password.style.border='3px solid red'
         return false  
@@ -112,6 +118,8 @@ password.style.border='1px solid #022833';
     else {  showerr.classList.add('active');
     showerr.innerHTML= `Strong password`
     showerr.style.backgroundColor="green"
+    showerr.style.padding='8px 0';
+  
     showerr.style.color="white"
     password.style.border='1px solid #022833';
 password.style.border='1px solid #022833';
@@ -122,11 +130,12 @@ return true;};
   setTimeout(function(){;
     clearInterval(check_err);
     showerr.classList.remove('active')
+    showerr.style.padding='0px';
     showerr.innerHTML=" ";
     showerr.style.background="none"
     password.style.border='1px solid #022833'
 
-  }, 2000)
+  }, 3000)
 
 
 };
@@ -197,16 +206,3 @@ class adduser {
 
 
 
-   
-
-
-
-//    signup_button.addEventListener('hover', ()=>{
-    
-//         console.log('ade')
-//          clearInterval(error);
-//          error_message.innerHTML=" ";
-//          confirm_password.style.border='1px solid #022833';
-//     password.style.border='1px solid #022833';
-      
-//    });
