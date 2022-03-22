@@ -23,7 +23,7 @@ confirm_password.addEventListener('blur', Mypassword);
 
 // confirm_password.addEventListener('input', Mypassword);
 // confirm_password.addEventListener('focus', Mypassword);
-password.addEventListener('focus', password_check);
+password.addEventListener('input', password_check);
 // password.addEventListener('input', password_check);
 
 
@@ -135,7 +135,7 @@ return true;};
     showerr.style.background="none"
     password.style.border='1px solid #022833'
 
-  }, 3000)
+  }, 2000)
 
 
 };
@@ -172,9 +172,10 @@ error_message.classList.add('active')
       let signerror= setInterval(() => {
 
 error_message.classList.add('active')
+allform.classList.add('active')
 
             error_message.innerHTML=`Check the form for error`;
-            error_message.style.color="red";
+      
             signup_button.style.backgroundColor="red" 
            }, 0);
 
@@ -182,11 +183,11 @@ error_message.classList.add('active')
           clearInterval(signerror)
 
 error_message.classList.remove('active')
-
+allform.classList.remove('active')
           error_message.innerHTML=` `;
           signup_button.style.backgroundColor="#006888";
           signup_button.style.color="white"  
-      }, 2000);
+      }, 1000);
    };
   
    };
@@ -206,3 +207,16 @@ class adduser {
 
 
 
+   
+
+
+
+//    signup_button.addEventListener('hover', ()=>{
+    
+//         console.log('ade')
+//          clearInterval(error);
+//          error_message.innerHTML=" ";
+//          confirm_password.style.border='1px solid #022833';
+//     password.style.border='1px solid #022833';
+      
+//    });
