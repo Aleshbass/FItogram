@@ -5,20 +5,31 @@ body{
  }
  
  #signupmessage{
-     position: absolute;
-     top: 5%;
-     left: 50%;
-   transform: translate(-50%, 5%);
-     width: 400px;
-     height: 55px;
-     font-family: var(--mainfont);
-     font-size: 1.2rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius: 10px;
-     transition: all .2s;
+ 
      
+ }
+
+ #signupmessage.active{
+    border: 2px solid red;
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 30%;
+    left: 50%;
+  transform: translate(-50%, -30%);
+    width: 400px;
+    height: 55px;
+    font-family: var(--mainfont);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .2s;
+ }
+
+ .signup.active{
+     filter: blur(1px);
  }
 
 
